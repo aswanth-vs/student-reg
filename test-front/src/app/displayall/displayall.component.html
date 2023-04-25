@@ -1,0 +1,33 @@
+<!--  -->
+<div class="main">
+  <a routerLink="register" class="btn btn-primary" id="registerBtn">Register</a>
+
+  <h2 class="text-center mb-3">All Registered Students</h2>
+  <table class="table table-success table-striped-columns">
+    <thead>
+      <tr class="main">
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>DOB (YYYY-MM-DD)</th>
+        <th>Gender</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border" *ngFor="let data of allData">
+        <td class="capitalization">
+          <span>{{ data.firstName }}</span
+          >{{ data.lastName }}
+        </td>
+        <td class="capitalization">{{ data.address }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.mobile }}</td>
+        <td>{{ data.dob }}</td>
+        <td class="capitalization">{{ data.gender }}</td>
+        <td>{{ data.course }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

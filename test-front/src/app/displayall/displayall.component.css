@@ -1,0 +1,23 @@
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.main {
+  margin-top: 35px;
+  padding-inline: 20px;
+  position: relative;
+}
+
+.capitalization {
+  text-transform: capitalize;
+}
+
+span::after {
+  content: " ";
+}
+
+#registerBtn {
+  position: absolute;
+  right: 33%;
+}
